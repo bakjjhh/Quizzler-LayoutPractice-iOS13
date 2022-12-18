@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var falseButtonPressed: UIButton!
     
     
-    let quiz = ["2+4=6","3+5=9","5+4=9"]
+    let quiz = [["2+4=6" , "true"],
+                 ["3+5=9" , "false"],
+                 ["5+4=9", "true"]
+                ]
     
     var questionNumber = 0
     
@@ -35,7 +38,7 @@ class ViewController: UIViewController {
     
     
     func updateUI(){
-        QuestionLable.text = quiz[questionNumber]
+        //QuestionLable.text = quiz[questionNumber]
     }
 
 }
