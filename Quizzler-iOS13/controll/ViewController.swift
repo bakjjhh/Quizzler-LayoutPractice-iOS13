@@ -45,12 +45,9 @@ class ViewController: UIViewController {
         
         
         
+        quizBrain.nextQuestion()
         
-        if quizBrain.questionNumber < (quizBrain.quiz.count - 1) {
-            quizBrain.questionNumber += 1
-        }else{
-            quizBrain.questionNumber = 0
-        }
+        
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(buttonColorChange), userInfo: nil, repeats: false)
         updateUI()
